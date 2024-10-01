@@ -15,6 +15,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="productos.html">Catálogo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carroto">Carrito</a></li>
             </ul>
         </nav>
     </header>
@@ -22,51 +23,78 @@
     <section id="home">
         <h2>Bienvenido a nuestra tienda</h2>
         <p>Descubre nuestra colección de vinilos clásicos y modernos. ¡Encuentra el vinilo perfecto para ti!</p>
-        <a href="productos.html" class="btn">Ver Catálogo Completo</a>
+        <!--<a href="productos.html" class="btn">Ver Catálogo Completo</a>-->
     </section>
 
     <section id="productos">
         <h2>Vinilos Destacados</h2>
+        <br><br>
         <div class="producto">
             <img src="Images/JJSecretos.avif" alt="Secretos">
-            <h3>Vinilo Clásico</h3>
-            <p>Descripción del vinilo. Precio: $20</p>
+            <h3>Secretos <br> José José</h3>
+            <p>Precio: $1250</p>
             <button>Comprar</button>
         </div>
 
         <div class="producto">
             <img src="Images/ElDiablito(Caifanes).jpg" alt="El Diablito">
-            <h3>Vinilo Moderno</h3>
-            <p>Descripción del vinilo. Precio: $25</p>
+            <h3>El Diablito <br> Caifanes</h3>
+            <p>Precio: $850</p>
             <button>Comprar</button>
         </div>
 
-        <a href="productos.html" class="btn">Ver Más Vinilos</a>
+        <div class="producto">
+            <img src="Images/NochesDeSalos(Enjambre).jpg" alt="Noches De Salos">
+            <h3>Noches De Salon<br> Enjambre</h3>
+            <p>Precio: $1450</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="Images/TheTouchOfYourLips(NKC).jpg" alt="The Touch Of Your Lips">
+            <h3>The Touch Of Your Lips</h3>
+            <p>Precio: $1500</p>
+            <button>Comprar</button>
+        </div>
+
+        <!--<a href="productos.html" class="btn">Ver Más Vinilos</a>-->
     </section>
 
-    <section id="ofertas">
+    <!--<section id="ofertas">
         <h2>Ofertas Especiales</h2>
         <p>¡Aprovecha nuestras ofertas en vinilos seleccionados!</p>
-    </section>
+    </section>-->
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+        <form = class="formulario">
+            <!--<fieldset>-->
+                <legend>Envíanos un mensaje</legend>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input class="input-text" type="text" name="nombre" placeholder="Tu Nombre">
+                    </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input class="input-text" type="email" name="email" placeholder="Tu Email">
+                    </div>
 
-            <button type="submit">Enviar</button>
+                    <div class="campo-textarea">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="input-text" name="mensaje"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            <!--</fieldset>-->
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Tienda de Vinilos. Todos los derechos reservados.</p>
+        <p>2024 Tienda de Vinilos.</p>
     </footer>
 </body>
 </html>
